@@ -1,0 +1,78 @@
+.table-component {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Updated button container styling */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* Button styling with smoother transitions */
+.btns {
+  padding: 10px 15px;
+  font-size: 30px;
+  width: 80px;
+  background-color: #b987ab; /* Button default background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btns:hover {
+  background-color: #9b6e8c; /* Slightly darker hover effect */
+  transform: scale(1.05);
+}
+
+/* Row styling for consistent spacing */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* Table container styling with proper alignment */
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color:transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Selected table heading styling */
+.selected-table {
+  font-size: 88px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px; /* Added margin for better separation */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .btns {
+    font-size: 24px;
+    width: 50px;
+    padding: 8px 12px;
+  }
+
+  .selected-table {
+    font-size: 64px;
+  }
+
+  .table-container {
+    padding: 15px;
+  }
+}
